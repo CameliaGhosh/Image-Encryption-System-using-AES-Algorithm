@@ -54,7 +54,7 @@ The system evaluates encryption strength using:
 * Efficient processing time
 
 ## Project Structure
-
+'''
 ├── app.py
 ├── static/
 │   ├── style.css
@@ -65,7 +65,7 @@ The system evaluates encryption strength using:
 │   ├── encrypt.html
 │   ├── decrypt.html
 │   └── result.html
-
+'''
 
 
 ## Note
