@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .analysis-box {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .analysis-box p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .analysis-box strong {
+            color: #333;
+        }
+        .hist-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>{{ message }}</h2>
+    {% if is_image %}
+        <img src="/decrypted/decrypted.png" alt="Result Image">
+    {% endif %}
+
+    {% if entropy %}
+    <div class="analysis-box">
+        <h3 style="margin-top: 0; font-size: 16px;">📊 Security Analysis</h3>
+        <p><strong>Shannon Entropy:</strong> {{ entropy }} <br>
+           <small><em>(Ideal is close to 8.0)</em></small></p>
+        <p><strong>Adjacent Correlation:</strong> {{ correlation }} <br>
+           <small><em>(Ideal is close to 0.0)</em></small></p>
+        
+        <p style="margin-top: 10px;"><strong>Byte Histogram:</strong></p>
+        <img src="/{{ histogram }}" alt="Histogram" class="hist-img">
+    </div>
+    {% endif %}
+    {% if histogram %}
+        <img src="/{{ histogram }}">
+    {% endif %}
+    <div style="margin-top: 20px;">
+        <a href="/download/{{ file }}" class="btn">⬇ Download File</a>
+        
+        {% if key_file %}
+            <a href="/download/{{ key_file }}" class="btn" style="background: linear-gradient(135deg, #6e8efb, #a777e3);">🔑 Download Key</a>
+        {% endif %}
+    </div>
+
+    <br>
+    <a href="/" class="btn" style="background: #ccc; color: #333;">🏠 Home</a>
+</div>
+
+</body>
+</html>

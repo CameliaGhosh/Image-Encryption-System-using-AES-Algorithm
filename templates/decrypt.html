@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decrypt</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🔓 Decrypt Image</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <!-- Encrypted File -->
+        <p style="text-align:left; font-size:14px; color:#666;">
+            📂 Upload Encrypted Image File (.bin)
+        </p>
+        <input type="file" name="image" required>
+
+        <!-- Key File -->
+        <p style="text-align:left; font-size:14px; color:#666;">
+            🔑 Upload Secret Key File (key.txt)
+        </p>
+        <input type="file" name="key" required>
+
+        <button type="submit">🌸 Decrypt</button>
+    </form>
+
+</div>
+
+</body>
+</html>
