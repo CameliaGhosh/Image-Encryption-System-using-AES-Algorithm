@@ -54,19 +54,27 @@ The system evaluates encryption strength using:
 * Efficient processing time
 
 ## Project Structure
-'''
-├── app.py
-├── static/
-│   ├── style.css
-├── encrypted/
-├── decrypted/
-├── templates/
-│   ├── index.html
-│   ├── encrypt.html
-│   ├── decrypt.html
-│   └── result.html
-'''
 
+Image-Encryption-System-using-AES/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+│
+├── static/
+│ ├── style.css
+│ ├── uploads/
+│ ├── encrypted/
+│ └── decrypted/
+│
+├── templates/
+│ ├── index.html
+│ ├── encrypt.html
+│ ├── decrypt.html
+│ └── result.html
+│
+└── docs/
+└── AIML-14.pptx
 
 ## Note
 
