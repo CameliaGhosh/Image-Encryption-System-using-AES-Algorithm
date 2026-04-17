@@ -55,6 +55,7 @@ The system evaluates encryption strength using:
 
 ## Project Structure
 
+```
 Image-Encryption-System-using-AES/
 │
 ├── app.py
@@ -62,19 +63,20 @@ Image-Encryption-System-using-AES/
 ├── requirements.txt
 │
 ├── static/
-│ ├── style.css
-│ ├── uploads/
-│ ├── encrypted/
-│ └── decrypted/
+│   ├── style.css
+│   ├── uploads/
+│   ├── encrypted/
+│   └── decrypted/
 │
 ├── templates/
-│ ├── index.html
-│ ├── encrypt.html
-│ ├── decrypt.html
-│ └── result.html
+│   ├── index.html
+│   ├── encrypt.html
+│   ├── decrypt.html
+│   └── result.html
 │
 └── docs/
-└── AIML-14.pptx
+    └── AIML-14.pptx
+```
 
 ## Note
 
